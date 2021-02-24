@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+:root {
+    --roxo: #7541c8;
+    --darkgray: #48556a;
+    --darkblue: #19212e;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    align-items: flex-start;
+    grid-template-areas:
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+        margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.daniel {
+    grid-area: daniel;
+    max-width: 550px;
+    background: var(--roxo);
+}
+
+.daniel img {
+    border-color: #9a78d1;
+}
+
+.jonathan {
+    grid-area: jonathan;
+    max-width: 200px;
+    background: var(--darkgray);
+}
+
+.jeanette {
+    grid-area: jeanette;
+    max-width: 200px;
+}
+
+.patrick {
+    grid-area: patrick;
+    max-width: 550px;
+    background: var(--darkblue);
+}
+
+.patrick img {
+    border-color: var(--roxo);
+}
+
+.kira {
+    grid-area: kira;
+    max-width: 200px;
+}
+
+.jeanette,
+.kira {
+    box-shadow: 0 0 20px #00000033;
+    color: #222;
+}
+
+.jeanette img,
+.kira img
+ {
+    border-color: white;
+}
+
+.jonathan img { border-color: #48556a;}
+.profile {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1.2rem;
+}
+
+.profile .name {
+    margin-bottom: 5px;
+}
+
+img {
+    height: 100%;
+    margin-right: 15px;
+    border-radius: 50px;
+    border: 2px solid;
+    width: 40px;
+}
+
+h2 {
+    margin-bottom: 1.2rem;
+}
+
+.desc,
+.graduate {
+    color: #b5b7c4;
+    font-weight: 500;
+}
+
+
+
+
+@media (max-width: 1060px) {
+    body {
+        height: auto;
+    }
+
+    .container {
+        margin: 15px;
+        grid-template-areas: "daniel daniel jonathan"
+            "jeanette patrick patrick "
+            "kira kira kira";
+            align-items: stretch;
+    }
+    .kira {
+        max-width: 800px;
+
+    }
+}
+
+@media (max-width: 540px){
+ .container {
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ .jonathan, .jeanette {
+     max-width: 500px;
+ }
+}
