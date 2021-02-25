@@ -32,7 +32,7 @@ body {
 }
 
 section {
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     color: #fff;
 }
@@ -40,7 +40,7 @@ section {
 .daniel {
     grid-area: daniel;
     max-width: 500px;
-    background: var(--roxo) url('./images/bg-pattern-quotation.svg')   350px 0  no-repeat;
+    background: var(--roxo) url('./images/bg-pattern-quotation.svg')   80% 0 / 110px no-repeat;
 }
 
 .daniel img {
@@ -70,7 +70,7 @@ section {
 
 .kira {
     grid-area: kira;
-    max-width: 190px;
+    max-width: 175px;
 }
 
 .jeanette,
