@@ -75,7 +75,8 @@ section {
 
 .jeanette,
 .kira {
-    box-shadow: 0 0 20px #00000033;
+    background: #fff;
+    box-shadow: 20px 20px 20px #00000010;
     color: #222;
 }
 
